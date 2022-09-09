@@ -1,4 +1,4 @@
-  #include <stlib.h>
+  #include <stdlib.h>
   #include <time.h>
   #include <stdio.h>
 
@@ -7,8 +7,8 @@
   * Return: Always 0 (Success)
   */
 
-       int main(void)
-       {
+int main(void)
+{
 	       int n;
 
 	       srand(time(0) );
@@ -27,7 +27,7 @@
 	              printf("%i is negative\n", n);
 	       }
 
-	       return (0);
+	       return (0)
 
-       }
+}
 
