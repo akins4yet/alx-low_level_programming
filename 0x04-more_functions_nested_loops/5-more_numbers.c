@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -6,17 +7,18 @@
 
 void more_numbers(void)
 {
-	char i;
-	int counter;
+	int i, c;
 
-	for (counter = 1; counter <= 10; counter++)
+	for (c = 1; c <= 10; c++)
 	{
 		for (i = 0; i <= 14; i++)
 		{
-			if (i / 10 > 0)
-				_putchar((i / 10) + '0');
-			_putchar((i % 10) + '0');
+			if (i > 9)
+			{
+				putchar((i / 10) + '0');
+			}
+			putchar((i % 10) + '0');
 		}
-		_putchar('\n');
+		putchar(10);
 	}
 }
